@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG System with Chunking Methods</title>
+    {% if url_for %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% else %}
+    <link rel="stylesheet" href="/static/style.css">
+    {% endif %}
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RAG System with Chunking Methods</h1>
+            <p>Exploring different text chunking strategies for Retrieval-Augmented Generation</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Chunking Analysis Section -->
+            <div class="section">
+                <h2>1. Chunking Methods Analysis</h2>
+                <p>Analyze different chunking strategies and their characteristics.</p>
+                <button class="btn" onclick="analyzeChunking()" id="analyzeBtn">Analyze Chunking Methods</button>
+                <div id="chunkingAnalysis"></div>
+            </div>
+
+            <!-- Query Section -->
+            <div class="section">
+                <h2>2. Query with Specific Method</h2>
+                <p>Test queries using different chunking methods.</p>
+                
+                <div class="query-section">
+                    <div class="input-group">
+                        <label for="questionInput">Enter your question:</label>
+                        <textarea id="questionInput" rows="3" placeholder="Type your question here..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="methodSelect">Chunking Method:</label>
+                        <select id="methodSelect">
+                            <option value="fixed_size">Fixed Size</option>
+                            <option value="sentence_splitter">Sentence Splitter</option>
+                            <option value="recursive">Recursive</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button class="btn" onclick="queryWithMethod()" id="queryBtn">Query</button>
+                <button class="btn" onclick="compareAllMethods()" id="compareBtn">Compare All Methods</button>
+                
+                <div id="queryResults"></div>
+            </div>
+
+            <!-- Sample Queries Section -->
+            <div class="section">
+                <h2>3. Sample Queries</h2>
+                <p>Click on any sample query to test it:</p>
+                <div id="sampleQueries"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

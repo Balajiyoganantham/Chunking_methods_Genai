@@ -1,0 +1,6 @@
+Flask
+python-dotenv
+langchain
+faiss-cpu
+sentence-transformers
+groq
