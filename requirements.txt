@@ -8,3 +8,4 @@ gunicorn
 langchain-community
 langchain_huggingface
 langchain
+langchain_groq
