@@ -24,7 +24,7 @@ used in secure communications. This has spurred research into post-quantum crypt
 develop quantum-resistant algorithms. Beyond cryptography, quantum computers excel in optimization 
 problems, such as supply chain logistics or financial portfolio management, where they can evaluate 
 multiple scenarios simultaneously. Quantum annealing, used by D-Wave, focuses on optimization, offering 
-solutions for industries like transportation and manufacturing.
+solutions for industries like transportation and manufacturing. 
 
 Page 4
 In healthcare, quantum computing could accelerate drug discovery by simulating molecular interactions 
@@ -43,3 +43,4 @@ quantum-safe cryptography. Workforce development is also critical, as quantum co
 skills in physics, mathematics, and computer science. Despite these hurdles, optimism surrounds quantum advancements, 
 with potential to solve intractable problems like climate modeling and AI optimization. Responsible innovation will 
 ensure quantum computing benefits society while mitigating risks.
+
