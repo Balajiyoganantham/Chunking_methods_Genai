@@ -6,3 +6,5 @@ sentence-transformers
 groq
 gunicorn
 langchain-community
+langchain_huggingface
+langchain
